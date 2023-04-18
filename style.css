@@ -1,0 +1,311 @@
+/* CSS Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+  
+/* Estilos Gerais */
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
+	color: #fff;
+    overflow-x: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center; /* centralizar conteúdo */
+    align-items: center;
+    padding: -15px;
+    top: 0;
+    left: 0;
+    height: 150px;
+    width: 100%;
+    z-index: 999;
+    transition: background-color 0.5s ease;
+    background-color: #090529;
+}
+  
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 0; /* remover margem */
+}
+  
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.logo {
+    left: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.logo img {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 150px;
+    margin-right: 10px;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+p {
+	margin-bottom: 20px;
+}
+
+ul {
+	list-style: none;
+	margin-bottom: 20px;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+    font-size: 30px;
+    display: flex;
+}
+
+
+/* Estilos da Seção de Hero */
+
+#hero {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+}
+
+#hero img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	min-height: 100%;
+	z-index: -1;
+	object-fit: cover;
+}
+
+#hero {
+	color: #fff;
+	text-align: center;
+	padding: 100px 0;
+}
+
+#hero h1 {
+	font-size: 4em;
+	margin-bottom: 10px;
+}
+
+#hero p {
+	position: relative;
+    font-size: 40px;
+    color: #57550a;
+    justify-content: center;
+    align-items: center;
+    top: 175px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* Estilos da Seção Serviços */
+#servicos {
+	padding: 100px 0;
+    color: black;
+    background-image: url('assets/imagens/work.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110vh;
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#servicos h2 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #fff;
+}
+
+#servicos li {
+    padding-left: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    padding: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.342);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.329);
+    color: #000;
+}
+  
+#servicos li:before {
+    content: "\2022";
+    position: absolute;
+    left: 0;
+}
+
+#servicos li:last-child {
+	margin-right: 0;
+}
+
+/* Estilos da Seção Contato */
+#contato {
+	background-color: #007bff;
+	padding: 100px 0;
+	color: #fff;
+}
+
+#contato h2 {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+	.container {
+		padding: 0 10px;
+	}
+	
+	nav {
+		flex-direction: column;
+	}
+}
+
+footer {
+	background-image: url('assets/imagens/PACHECOPASSOS.png');
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	padding: 25px 0;
+}
+
+footer .autorais {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    left: 500px;
+}
+
+footer .social {
+    position: relative;
+    color: black;
+}
+
+footer .social a {
+    display: flex;
+    position: relative;
+}
+
+.nav-social-links {
+    display: flex;
+    list-style: none;
+    margin-left: auto; /* move os links para o final da Navbar */
+  }
+  
+  .nav-social-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-social-links li:last-child {
+    margin-right: 0;
+  }
+  
+  .nav-social-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    transition: color 0.5s ease;
+  }
+  
+  .nav-social-links a:hover {
+    color: #888;
+  }
+  
+  /* Adicione o estilo dos ícones das redes sociais */
+.fa-facebook {
+    color: #3b5998;
+}
+  
+.fa-twitter {
+    color: #1da1f2;
+}
+  
+.fa-instagram {
+    color: #b94914;
+}
+  
+
+
+/* WhatsApp */
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #25d366;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    animation: whatsapp-float 2s ease-in-out infinite;
+
+    animation-name: pulsar;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-out;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+  
+.whatsapp-float i {
+    font-size: 24px;
+    color: #fff;
+}
+  
+@keyframes whatsapp-float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+@keyframes pulsar {
+    0% {
+        height: 65px;
+        width: 65px;
+    }
+    100% {
+        height: 85px;
+        width: 85px;
+    }
+}
+
+
+
