@@ -1,0 +1,91 @@
+/* CSS Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+  
+/* Estilos Gerais */
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
+	color: #fff;
+    overflow-x: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center; /* centralizar conteúdo */
+    align-items: center;
+    padding: -15px;
+    top: 0;
+    left: 0;
+    height: 150px;
+    width: 100%;
+    z-index: 999;
+    transition: background-color 0.5s ease;
+    background-color: #090529;
+}
+  
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 0; /* remover margem */
+}
+  
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.logo {
+    left: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.logo img {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 150px;
+    margin-right: 10px;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+p {
+	margin-bottom: 20px;
+}
+
+ul {
+	list-style: none;
+	margin-bottom: 20px;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+    font-size: 30px;
+    display: flex;
+}
+
+/* Estilos da Seção Contato */
+#contato {
+	background-color: #007bff;
+	padding: 100px 0;
+	color: #fff;
+}
+
+#contato h2 {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+
+
+
