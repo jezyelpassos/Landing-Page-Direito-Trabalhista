@@ -1,0 +1,55 @@
+/* Estilos da Seção Serviços */
+#servicos {
+	padding: 100px 0;
+    color: black;
+    background-image: url('../assets/imagens/work.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110vh;
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#servicos h2 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #fff;
+}
+
+#servicos li {
+    padding-left: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    padding: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.342);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.329);
+    color: #000;
+}
+  
+#servicos li:before {
+    content: "\2022";
+    position: absolute;
+    left: 0;
+}
+
+#servicos li:last-child {
+	margin-right: 0;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+	.servicos__container {
+		padding: 0 10px;
+	}
+	
+	nav {
+		flex-direction: column;
+	}
+}

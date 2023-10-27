@@ -1,0 +1,63 @@
+footer {
+	background-image: url('../assets/imagens/PACHECOPASSOS.png');
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	padding: 25px 0;
+}
+
+footer .autorais {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    left: 500px;
+}
+
+footer .social {
+    position: relative;
+    color: black;
+}
+
+footer .social a {
+    display: flex;
+    position: relative;
+}
+
+.nav-social-links {
+    display: flex;
+    list-style: none;
+    margin-left: auto; /* move os links para o final da Navbar */
+  }
+  
+  .nav-social-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-social-links li:last-child {
+    margin-right: 0;
+  }
+  
+  .nav-social-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    transition: color 0.5s ease;
+  }
+  
+  .nav-social-links a:hover {
+    color: #888;
+  }
+  
+  /* Adicione o estilo dos ícones das redes sociais */
+.fa-facebook {
+    color: #3b5998;
+}
+  
+.fa-twitter {
+    color: #1da1f2;
+}
+  
+.fa-instagram {
+    color: #b94914;
+}
+  
