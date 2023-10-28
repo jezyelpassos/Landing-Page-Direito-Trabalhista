@@ -12,6 +12,11 @@ body {
 	line-height: 1.6;
 	color: #fff;
     overflow-x: hidden;
+    position: relative;
+}
+
+.hidden {
+    filter: blur(3px);
 }
 
 .navbar {
