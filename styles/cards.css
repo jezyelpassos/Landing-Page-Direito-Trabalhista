@@ -16,10 +16,11 @@
     display: flex;
     justify-content: center;
     margin: auto;
+    font-size: 18px;
     align-items: center;
-    height: 200px;
+    height: 35%;
     width: 50%;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 10px;
     display: none;
     z-index: 10;
@@ -27,14 +28,18 @@
 
 .back {
   position: absolute;
-  top: 78%;  
-  left: 92%;
-  padding: 10px;
-  margin: auto;
-  background-color: #4070F4;
+  top: 58%;
+  left: 63%;
+  width: 150px;
+  height: 55px;
+  padding: 5px;
+  margin: 2px auto;
+  background-color: #265DF2;
   border-radius: 10px;
   border: 1px solid;
   color: #fff;
+  z-index: 10;
+  display: none;
 }
 .slide-content {
     display: flex;
