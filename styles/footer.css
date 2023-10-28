@@ -1,9 +1,8 @@
 footer {
-	/* background-image: url('../assets/imagens/PACHECOPASSOS.png');
+	background-image: url('../assets/imagens/PACHECOPASSOS.png');
 	background-size: cover;
 	background-position: center center;
-	background-repeat: no-repeat; */
-  background-color: rebeccapurple;
+	background-repeat: no-repeat;
 	padding: 25px 0;
 }
 
